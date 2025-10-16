@@ -255,3 +255,9 @@ def get_patron_status_report(patron_id: str) -> Dict:
         "borrowed_books": borrowd_summ,
         "total_late_fees": fee_total
     }
+
+
+#git test stuff
+def get_borrow_records_by_patron(patron_id: str):
+    """Temporary placeholder for CI tests."""
+    return []
