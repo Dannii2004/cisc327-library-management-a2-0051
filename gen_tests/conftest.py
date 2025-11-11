@@ -1,5 +1,5 @@
 import pytest
-import library_service as svc
+from services import library_service as svc
 
 @pytest.fixture(autouse=True)
 def _ai_isolation(monkeypatch, request):

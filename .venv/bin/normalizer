@@ -1,0 +1,9 @@
+#!/bin/sh
+'''exec' "/mnt/c/Users/danne/OneDrive/Desktop/School/4th year/FALL/CISC 327 - software quality assurance/assignments/a1/CISC327-CMPE327-F25-main/CISC327-CMPE327-F25-main/.venv/bin/python" "$0" "$@"
+' '''
+import sys
+from charset_normalizer.cli import cli_detect
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(cli_detect())
